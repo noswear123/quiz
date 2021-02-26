@@ -1,0 +1,32 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: 'DotGothic16';
+    font-size: large;
+}
+
+.questions h1 {
+    color:hotpink;
+}
+
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 30px;
+    margin: 20px 100px 0px 100px;
+    color:cyan; 
+    
+}
+
+.answer:hover {
+    transition: 1.55s;
+    background-color:cyan;
+    cursor: pointer;
+    color: black;
+}

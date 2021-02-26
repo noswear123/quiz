@@ -1,0 +1,86 @@
+.game {
+    color:green;
+}
+
+.nocategory {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 0;
+	background: none;
+	text-transform: uppercase;
+	color: green;
+	font-weight: bold;
+	position: relative;
+	outline: none;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin: 20px 70px 0px 70px;
+	cursor: pointer;
+
+}
+
+.btn:hover{
+  transition: 3.50s;
+  color: black;
+  border: green solid 1px;
+  background: green;
+}
+
+.loader {
+    color:green;
+    font-family: 'DotGothic16';
+    height:9vh;
+    left:50%;
+    overflow-x:hidden;
+    padding-top:7vh;
+    position:absolute;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:50vw;
+}
+
+.loader:before {
+      animation:left-to-right 3s alternate infinite linear;
+      background-image:linear-gradient(to right, transparent, green, transparent);
+      bottom:0;
+      content:"";
+      height:5vh;
+      left:0;
+      overflow:hidden;
+      position:absolute;
+      right:0;
+      top:0;
+    }
+
+.loader:after {
+      background-image:repeating-linear-gradient(
+        90deg,
+        white,
+        white 1vw,
+        transparent 1vw,
+        transparent 10vw
+      );
+      content:"";
+      height:5vh;
+      left:0;
+      overflow:hidden;
+      position:absolute;
+      right:0;
+      top:0;
+    }
+
+  
+  @keyframes left-to-right {
+    0% {
+      transform:translateX(-100%);
+    }
+    100% {
+      transform:translateX(100%);
+    }
+  }
